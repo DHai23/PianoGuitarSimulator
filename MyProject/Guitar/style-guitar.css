@@ -1,0 +1,1095 @@
+@import url('http://fonts.cdnfonts.com/css/callie-chalk-font');
+
+html  {
+    height: 100%;
+}
+
+body  {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, var(--primary-background));
+}
+
+
+
+.guitar  {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(146, 95, 0);
+    top: 35%;
+    right: 10%;
+}
+
+.string1-part1  {
+    position: absolute;
+    width: 49%;
+    height: 4.5%;
+    background-color: #fff;
+    top: 14%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string1-part2  {
+    position: absolute;
+    width: 12%;
+    height: 4.5%;
+    left: 49%;
+    background-color: #fff;
+    top: 14%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string1-part3  {
+    position: absolute;
+    height: 4.5%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 14%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string1-part4  {
+    position: absolute;
+    height: 4.5%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 14%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string1-part5  {
+    position: absolute;
+    height: 4.5%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 14%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.string2-part1  {
+    position: absolute;
+    width: 49%;
+    height: 4%;
+    background-color: #fff;
+    top: 28%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string2-part2  {
+    position: absolute;
+    width: 12%;
+    left: 49%;
+    height: 4%;
+    background-color: #fff;
+    top: 28%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string2-part3  {
+    position: absolute;
+    height: 4%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 28%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string2-part4  {
+    position: absolute;
+    height: 4%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 28%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string2-part5  {
+    position: absolute;
+    height: 4%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 28%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.string3-part1  {
+    position: absolute;
+    width: 49%;
+    height: 3.5%;
+    background-color: #fff;
+    top: 42%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+.string3-part2  {
+    position: absolute;
+    left: 49%;
+    width: 12%;
+    height: 3.5%;
+    background-color: #fff;
+    top: 42%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string3-part3  {
+    position: absolute;
+    height: 3.5%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 42%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string3-part4  {
+    position: absolute;
+    height: 3.5%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 42%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string3-part5  {
+    position: absolute;
+    height: 3.5%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 42%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.string4-part1  {
+    position: absolute;
+    width: 49%;
+    height: 3%;
+    background-color: #fff;
+    top: 56%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string4-part2  {
+    position: absolute;
+    width: 49%;
+    height: 3%;
+    left: 49%;
+    width: 12%;
+    background-color: #fff;
+    top: 56%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string4-part3  {
+    position: absolute;
+    width: 49%;
+    height: 3%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 56%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string4-part4  {
+    position: absolute;
+    width: 49%;
+    height: 3%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 56%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string4-part5  {
+    position: absolute;
+    width: 49%;
+    height: 3%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 56%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.string5-part1  {
+    position: absolute;
+    width: 49%;
+    height: 2%;
+    background-color: #fff;
+    top: 70%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string5-part2  {
+    position: absolute;
+    width: 49%;
+    height: 2%;
+    left: 49%;
+    width: 12%;
+    background-color: #fff;
+    top: 70%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string5-part3  {
+    position: absolute;
+    width: 49%;
+    height: 2%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 70%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string5-part4  {
+    position: absolute;
+    width: 49%;
+    height: 2%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 70%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string5-part5  {
+    position: absolute;
+    width: 49%;
+    height: 2%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 70%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+.string6-part1  {
+    position: absolute;
+    width: 49%;
+    height: 1.5%;
+    background-color: #fff;
+    top: 84%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string6-part2  {
+    position: absolute;
+    width: 49%;
+    height: 1.5%;
+    left: 49%;
+    width: 12%;
+    background-color: #fff;
+    top: 84%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string6-part3  {
+    position: absolute;
+    width: 49%;
+    height: 1.5%;
+    width: 14%;
+    left: 61%;
+    background-color: #fff;
+    top: 84%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string6-part4  {
+    position: absolute;
+    width: 49%;
+    height: 1.5%;
+    width: 15%;
+    left: 75%;
+    background-color: #fff;
+    top: 84%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+.string6-part5  {
+    position: absolute;
+    width: 49%;
+    height: 1.5%;
+    width: 10%;
+    left: 90%;
+    background-color: #fff;
+    top: 84%;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+.neck  {
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    width: 10%;
+    height: 120%;
+    background-color: rgb(61, 38, 2);
+}
+
+.sound-box  {
+    position: absolute;
+    background-image: linear-gradient(-135deg, rgb(95, 63, 14),rgb(2, 2, 2));
+    border-radius: 50%;
+    width: 30%;
+    height: 200%;
+    left: 5%;
+    top: -50%;
+    z-index: 1;
+}
+
+.sound-box-border  {
+    position: absolute;
+    border-radius: 50%;
+    background-color: orange;
+    width: 35%;
+    height: 220%;
+    left: 2%;
+    top: -60%;
+    z-index: -1;
+}
+
+
+.fret1  {
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 2%;
+    height: 100%;
+    z-index: 1;
+    right: 10%;
+}
+
+.fret2  {
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 2%;
+    height: 100%;
+    z-index: 1;
+    right: 25%;
+}
+
+.fret3  {
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 2%;
+    height: 100%;
+    z-index: 1;
+    right: 37%;
+}
+
+.fret4  {
+    position: absolute;
+    background-color: rgb(163, 163, 163);
+    width: 2%;
+    height: 100%;
+    z-index: 1;
+    right: 49%;
+}
+
+.tuner1  {
+    position: absolute;
+    background-color: #fff;
+    width: 15%;
+    height: 30%;
+    z-index: 0;
+    right: 20%;
+    top: -30%;
+
+}
+.tuner2  {
+    position: absolute;
+    background-color: #fff;
+    width: 15%;
+    height: 30%;
+    z-index: 0;
+    right: 60%;
+    top: -30%;
+
+}
+.tuner3  {
+    position: absolute;
+    background-color: #fff;
+    width: 15%;
+    height: 30%;
+    z-index: 0;
+    right: 20%;
+    top: 100%;
+
+}
+.tuner4  {
+    position: absolute;
+    background-color: #fff;
+    width: 15%;
+    height: 30%;
+    z-index: 0;
+    right: 60%;
+    top: 100%;
+
+}
+.tuner-circle1  {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25%;
+    height: 15%;
+    top: 15%;
+    right: 15%;
+}
+.tuner-circle2  {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25%;
+    height: 15%;
+    top: 15%;
+    right: 55%;
+}
+.tuner-circle3  {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25%;
+    height: 15%;
+    top: 70%;
+    right: 15%;
+}
+.tuner-circle4  {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25%;
+    height: 15%;
+    top: 70%;
+    right: 55%;
+}
+
+
+
+:root  {
+    --primary-background: #a8eeff, #ffd8bf;
+    --secondary-color: rgb(0, 0, 0);
+    --third-color: #fff;
+
+}
+
+.dark-theme  {
+    --primary-background: #181818, rgb(87, 29, 102);
+    --secondary-color: #FFF;
+    --third-color: #000;
+
+}
+
+
+#introduction1  {
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    top: 600px;
+    left: 30%;
+    color: var(--secondary-color);
+}
+
+#icon  {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 77px;
+}
+
+#message  {
+    color: var(--secondary-color);
+    top: 100px;
+    right: 42px;
+    position: absolute;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav p:hover {
+    color: #8a5353;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #8a5353;
+}
+
+
+  
+.sidenav .closebtn {
+        
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu  {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li  {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.active li  {
+    transform: rotate(calc(360deg / 8 * var(--i) - 25deg));
+}
+
+.menu li a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i) -25deg));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #111;
+    transition: 0.5s;
+
+}
+
+.menu li a:hover  {
+    color: #ff1252;
+}
+
+.toggle  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0,15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.menu.active .toggle  {
+    transform: rotate(315deg);
+}
+
+#sheet {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    font-size: 300%;
+}
+
+div.scroll {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.emoji {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: -1;
+    top: 500px;
+}
+
+#lefteye {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 23px;
+    left: 20px;
+}
+
+#righteye {
+    position: absolute;
+    top: 23px;
+    left: 60px;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+#lefteye-after  {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 6px solid #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 20px;
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+
+#righteye-after  {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 6px solid #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 20px;
+    left: 60px;
+    transform: rotate(180deg);
+}
+
+#mouth-after  {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    width: 25px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+#mouth  {
+    position: absolute;
+    top: 45px;
+    left: 23px;
+    width: 50px;
+    height: 35px;
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+
+#top-left1 {
+    position: absolute;
+    width: 33%;
+    height: 27%;
+    left: 162px;
+    top: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#top-left1:hover ~ .emoji #lefteye {
+    transform: translateX(-8px) translateY(-8px);
+}
+
+#top-left1:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left1:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left2  {
+    width: 27%;
+    height: 26%;
+    left: 0;
+    top: 63px;
+    position: absolute;
+    background-color: transparent;
+    z-index: 999;
+}
+#top-left2:hover ~ .emoji #lefteye {
+    transform: translateX(-8px) translateY(-8px);
+}
+
+#top-left2:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left2:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+
+#middle-left {
+    width: 27%;
+    height: 33%;
+    position: absolute;
+        top: 33%;
+        left: 0;
+    background-color: transparent;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#middle-left:hover ~ .emoji #lefteye {
+    transform: translateX(-10px);
+}
+
+#middle-left:hover ~ .emoji #righteye {
+    transform: translateX(-10px);
+}
+
+#middle-left:hover ~ .emoji #mouth {
+    transform: translateX(-10px);
+}
+
+#bottom-left {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 66%;
+        left: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#bottom-left:hover ~ .emoji #lefteye {
+    transform: translateX(-10px) translateY(10px);
+}
+
+#bottom-left:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(10px);
+}
+
+#bottom-left:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(5px);
+}
+
+#middle-top {
+    width: 33%;
+    height: 27%;
+    position: absolute;
+        top: 0;
+        left: 33%;
+    background-color: transparent;
+    z-index: 999;
+
+}
+
+#middle-top:hover ~ .emoji #lefteye {
+    transform: translateY(-10px);
+}
+
+#middle-top:hover ~ .emoji #righteye {
+    transform: translateY(-10px);
+}
+
+#middle-top:hover ~ .emoji #mouth {
+    transform: translateY(-10px);
+}
+
+#middle-bottom {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 66%;
+        left: 33%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#middle-bottom:hover ~ .emoji #lefteye {
+    transform: translateY(10px);
+}
+
+#middle-bottom:hover ~ .emoji #righteye {
+    transform: translateY(10px);
+}
+
+#middle-bottom:hover ~ .emoji #mouth {
+    transform: translateY(5px);
+}
+
+
+#top-right {
+    width: 22%;
+    height: 33%;
+    position: absolute;
+        top: 0;
+        left: 66%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#top-right:hover ~ .emoji #lefteye {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#top-right:hover ~ .emoji #righteye {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#top-right:hover ~ .emoji #mouth {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#middle-right {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 33%;
+        left: 74%;
+    background-color: transparent;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#middle-right:hover ~ .emoji #lefteye {
+    transform: translateX(10px);
+}
+
+#middle-right:hover ~ .emoji #righteye {
+    transform: translateX(10px);
+}
+
+#middle-right:hover ~ .emoji #mouth {
+    transform: translateX(10px);
+}
+
+#bottom-right {
+    width: 35%;
+    height: 35%;
+    position: absolute;
+        top: 66%;
+        left: 66%;
+    background-color: transparent;
+    z-index: 999;
+
+}
+
+#bottom-right:hover ~ .emoji #lefteye {
+    transform: translateX(10px) translateY(10px);
+}
+
+#bottom-right:hover ~ .emoji #righteye {
+    transform: translateX(10px) translateY(10px);
+}
+
+#bottom-right:hover ~ .emoji #mouth {
+    transform: translateX(10px) translateY(5px);
+}
+
+
+#dave  {
+    color: var(--secondary-color);
+    font-family: 'Callie Chalk Font', sans-serif;;
+    position: absolute;
+    font-size: 80%;
+    top: 520px;
+    left: 870px;
+}
+
+.string1-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string1-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string1-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string1-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string1-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string2-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string2-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string2-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string2-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string2-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string3-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string3-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string3-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string3-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string3-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string4-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string4-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string4-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string4-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string4-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string5-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string5-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string5-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string5-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string5-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part1.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part2.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part3.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part4.active  {
+    background-color:rgb(61, 61, 61);
+}
+.string6-part5.active  {
+    background-color:rgb(61, 61, 61);
+}
+
+.tab  {
+    display: inline-block;
+    margin-left: 80px;
+}

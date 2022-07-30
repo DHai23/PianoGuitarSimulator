@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar</title>
+    <link rel="stylesheet" href="style-guitar.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <div class="piano">
+        <button class="black-key Db4-key"></button>
+        <button class="white-key D4-key"></button>
+        <button class="black-key Eb4-key"></button>
+        <button class="white-key E4-key"></button>
+        <button class="white-key F4-key"></button>
+        <button class="black-key Gb4-key"></button>
+        <button class="white-key G4-key"></button>
+        <button class="black-key Ab4-key"></button>
+        <button class="white-key A4-key"></button>
+        <button class="black-key Bb4-key"></button>
+        <button class="white-key B4-key"></button>
+        <button class="white-key C5-key"></button>
+        <button class="black-key Db5-key"></button>
+        <button class="white-key D5-key"></button>
+        <button class="black-key Eb5-key"></button>
+        <button class="white-key E5-key"></button>
+    </div>
+
+    <div class="guitar">
+        <div class="neck">
+            <div class="tuner1"></div>
+            <div class="tuner2"></div>
+            <div class="tuner3"></div>
+            <div class="tuner4"></div>
+            <div class="tuner-circle1"></div>
+            <div class="tuner-circle2"></div>
+            <div class="tuner-circle3"></div>
+            <div class="tuner-circle4"></div>
+        </div>
+        <div class="string1-part1"></div>
+        <div class="string1-part2"></div>
+        <div class="string1-part3"></div>
+        <div class="string1-part4"></div>
+        <div class="string1-part5"></div>
+
+
+        <div class="string2"></div>
+        <div class="string2-part1"></div>
+        <div class="string2-part2"></div>
+        <div class="string2-part3"></div>
+        <div class="string2-part4"></div>
+        <div class="string2-part5"></div>
+
+        <div class="string3"></div>
+        <div class="string3-part1"></div>
+        <div class="string3-part2"></div>
+        <div class="string3-part3"></div>
+        <div class="string3-part4"></div>
+        <div class="string3-part5"></div>
+
+        <div class="string4"></div>
+        <div class="string4-part1"></div>
+        <div class="string4-part2"></div>
+        <div class="string4-part3"></div>
+        <div class="string4-part4"></div>
+        <div class="string4-part5"></div>
+
+        <div class="string5"></div>
+        <div class="string5-part1"></div>
+        <div class="string5-part2"></div>
+        <div class="string5-part3"></div>
+        <div class="string5-part4"></div>
+        <div class="string5-part5"></div>
+
+        <div class="string6"></div>
+        <div class="string6-part1"></div>
+        <div class="string6-part2"></div>
+        <div class="string6-part3"></div>
+        <div class="string6-part4"></div>
+        <div class="string6-part5"></div>
+
+        <div class="fret1"></div>
+        <div class="fret2"></div>
+        <div class="fret3"></div>
+        <div class="fret4"></div>
+        <div class="sound-box"></div>
+        <div class="sound-box-border"></div>
+    </div>
+
+
+
+    <div id="introduction1">
+        <h1>Dây 6: 1, 2, 3, 4, 5<span class="tab"></span>Dây 3: 6, 7, 8, 9, 0</h1> 
+        <h1>Dây 5: Q, W, E, R, T<span class="tab"></span>Dây 2:  Y, U, I, O, P</h1>
+        <h1>Dây 4: A, S, D, F, G<span class="tab"></span>Dây 1: H, J, K, L, ;</h1>
+    </div>
+
+    <img src="images/moon.png" id="icon" title="Moon">
+    <div id="message">Night mode: OFF</div>
+
+    <div id="mySidenav" class="sidenav scroll">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p style="cursor:pointer;" onclick="song1()">Happy Birthday</p>
+        <p style="cursor:pointer;" onclick="song2()">Ode to Joy</p>
+        <p style="cursor:pointer;" onclick="song3()">Twinkle twinkle little star</p>
+        <p style="cursor:pointer;" onclick="song4()">Fur elise</p>
+        <p style="cursor:pointer;" onclick="song5()">Faded</p>
+        <p style="cursor:pointer;" onclick="song6()">Jingle Bells</p>
+        <p style="cursor:pointer;" onclick="song7()">Wish you a merry Xmas</p>
+        <p style="cursor:pointer;" onclick="song8()">Date 2</p>
+        <p style="cursor:pointer;" onclick="song9()">Demons</p>
+        <p style="cursor:pointer;" onclick="song1()">Mary had a little lamp</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+
+    </div>
+    <p id="sheet"></p> 
+
+    <div class="menu">
+        <div class="toggle" title="Musical Instruments"><ion-icon name="pause-circle-outline"></ion-icon>
+        </div>
+        <li style="--i:0;" title="Guitar Mode">
+            <a href="index-guitar.html"><ion-icon name="musical-note-outline" title="Guitar Mode"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:1;" title="Piano Mode">
+            <a href="../Piano/index.html"><ion-icon name="musical-notes-outline" title="Piano Mode"></ion-icon></a>
+        </li>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <span style="font-size:30px;cursor:pointer; position: absolute; top:30px; left: 20px; color: var(--secondary-color);" onclick="openNav()">&#9776; Chọn bài</span>
+
+    <div id="top-left1"></div>
+    <div id="top-left2"></div>
+    <div id="middle-left"></div>
+    <div id="bottom-left"></div>
+
+    <div id="middle-top"></div>
+    <div id="middle-middle"></div>
+    <div id="middle-bottom"></div>
+
+    <div id="top-right"></div>
+    <div id="middle-right"></div>
+    <div id="bottom-right"></div>
+
+    <div class="emoji">
+        <div id="lefteye"></div>
+        <div id="righteye"></div>
+        <div id="mouth"></div>
+
+    </div>
+    
+    <pre id="dave">
+    This  is  Dave
+     He  is  usually  quiet  but  really  fond  of  singing
+
+    </pre>
+    <script src="script-guitar.js"></script>
+</body>
+</html>

@@ -1,0 +1,635 @@
+@import url('http://fonts.cdnfonts.com/css/callie-chalk-font');
+
+html  {
+    height: 100%;
+}
+
+body  {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, var(--primary-background));
+}
+
+:root  {
+    --primary-background: #a8eeff, #ffd8bf;
+    --secondary-color: rgb(0, 0, 0);
+    --third-color: #fff;
+
+}
+
+.dark-theme  {
+    --primary-background: #181818, rgb(87, 29, 102);
+    --secondary-color: #FFF;
+    --third-color: #000;
+
+}
+
+.piano  {
+    display: flex;
+    position: relative;
+    margin-left: 1%;
+}
+
+.white-key  {
+    width: 80px;
+    height: 270px;
+    background-color: #FFF;
+    border: 8px solid black;
+    border-radius: 0 0 16px 16px;
+    margin-left: -6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.white-key.active  {
+    background-color: #C0C0C0;
+}
+
+.black-key  {
+    position: absolute;
+    width: 48px;
+    height: 170px;
+    background-image: linear-gradient(#000000, #303030);
+    border: 7px solid black;
+    border-radius: 0 0 4px 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.black-key.active  {
+    background-image: linear-gradient(#000000, #101010);
+}
+
+.Db4-key  {
+    left: 47px;
+}
+
+.Eb4-key  {
+    left: 122px;
+}
+
+.Gb4-key  {
+    left: 269px;
+}
+
+.Ab4-key  {
+    left: 343px;
+}
+
+.Bb4-key  {
+    left: 417px;
+}
+
+.Db5-key  {
+    left: 566px;
+}
+
+.Eb5-key  {
+    left: 639px;
+}
+
+.keynote-white  {
+    position: absolute;
+    top: 190px;
+    color: #888888;
+    font-size: 200%;
+    pointer-events: none;
+}
+
+.C4-keynote  {
+    left: 14px;
+}
+
+.D4-keynote  {
+    left: 88px;
+}
+
+.E4-keynote  {
+    left: 165px;
+}
+
+.F4-keynote  {
+    left: 238px;
+}
+
+.G4-keynote  {
+    left: 310px;
+}
+
+.A4-keynote  {
+    left: 384px;
+}
+
+.B4-keynote  {
+    left: 458px;
+}
+
+.C5-keynote  {
+    left: 530px;
+}
+
+.D5-keynote  {
+    left: 607px;
+}
+
+.E5-keynote  {
+    left: 680px;
+}
+
+.keynote-black  {
+    pointer-events: none;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    
+}
+
+.Db4-keynote  {
+    left: 57px;
+}
+
+.Eb4-keynote  {
+    left: 132px;
+}
+
+.Gb4-keynote  {
+    left: 279px;
+}
+
+.Ab4-keynote  {
+    left: 353px;
+}
+
+.Bb4-keynote  {
+    left: 428px;
+}
+
+.Db5-keynote  {
+    left: 576px;
+}
+
+.Eb5-keynote  {
+    left: 650px;
+}
+
+#introduction  {
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    top: 630px;
+    left: 26%;
+    color: var(--secondary-color);
+}
+
+#icon  {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 77px;
+}
+
+#message  {
+    color: var(--secondary-color);
+    top: 100px;
+    right: 42px;
+    position: absolute;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav p:hover {
+    color: #8a5353;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #8a5353;
+}
+
+
+  
+.sidenav .closebtn {
+        
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu  {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li  {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.active li  {
+    transform: rotate(calc(360deg / 8 * var(--i) - 25deg));
+}
+
+.menu li a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i) -25deg));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #111;
+    transition: 0.5s;
+
+}
+
+.menu li a:hover  {
+    color: #ff1252;
+}
+
+.toggle  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0,15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.menu.active .toggle  {
+    transform: rotate(315deg);
+}
+
+#sheet {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    font-size: 200%;
+}
+
+div.scroll {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.emoji {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: -1;
+    top: 500px;
+}
+
+#lefteye {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 23px;
+    left: 20px;
+}
+
+#righteye {
+    position: absolute;
+    top: 23px;
+    left: 60px;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+#lefteye-after  {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 6px solid #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 20px;
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+
+#righteye-after  {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 6px solid #fff;
+    z-index: -1;
+    transition: 80ms ease-out;
+    top: 20px;
+    left: 60px;
+    transform: rotate(180deg);
+}
+
+#mouth-after  {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    width: 25px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+#mouth  {
+    position: absolute;
+    top: 45px;
+    left: 23px;
+    width: 50px;
+    height: 35px;
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 80ms ease-out;
+}
+
+
+#top-left1 {
+    position: absolute;
+    width: 33%;
+    height: 27%;
+    left: 162px;
+    top: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#top-left1:hover ~ .emoji #lefteye {
+    transform: translateX(-8px) translateY(-8px);
+}
+
+#top-left1:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left1:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left2  {
+    width: 27%;
+    height: 26%;
+    left: 0;
+    top: 63px;
+    position: absolute;
+    background-color: transparent;
+    z-index: 999;
+}
+#top-left2:hover ~ .emoji #lefteye {
+    transform: translateX(-8px) translateY(-8px);
+}
+
+#top-left2:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+#top-left2:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(-10px);
+}
+
+
+#middle-left {
+    width: 27%;
+    height: 33%;
+    position: absolute;
+        top: 33%;
+        left: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#middle-left:hover ~ .emoji #lefteye {
+    transform: translateX(-10px);
+}
+
+#middle-left:hover ~ .emoji #righteye {
+    transform: translateX(-10px);
+}
+
+#middle-left:hover ~ .emoji #mouth {
+    transform: translateX(-10px);
+}
+
+#bottom-left {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 66%;
+        left: 0;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#bottom-left:hover ~ .emoji #lefteye {
+    transform: translateX(-10px) translateY(10px);
+}
+
+#bottom-left:hover ~ .emoji #righteye {
+    transform: translateX(-10px) translateY(10px);
+}
+
+#bottom-left:hover ~ .emoji #mouth {
+    transform: translateX(-10px) translateY(5px);
+}
+
+#middle-top {
+    width: 33%;
+    height: 27%;
+    position: absolute;
+        top: 0;
+        left: 33%;
+    background-color: transparent;
+    z-index: 999;
+
+}
+
+#middle-top:hover ~ .emoji #lefteye {
+    transform: translateY(-10px);
+}
+
+#middle-top:hover ~ .emoji #righteye {
+    transform: translateY(-10px);
+}
+
+#middle-top:hover ~ .emoji #mouth {
+    transform: translateY(-10px);
+}
+
+#middle-bottom {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 66%;
+        left: 33%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#middle-bottom:hover ~ .emoji #lefteye {
+    transform: translateY(10px);
+}
+
+#middle-bottom:hover ~ .emoji #righteye {
+    transform: translateY(10px);
+}
+
+#middle-bottom:hover ~ .emoji #mouth {
+    transform: translateY(5px);
+}
+
+
+#top-right {
+    width: 22%;
+    height: 33%;
+    position: absolute;
+        top: 0;
+        left: 66%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#top-right:hover ~ .emoji #lefteye {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#top-right:hover ~ .emoji #righteye {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#top-right:hover ~ .emoji #mouth {
+    transform: translateY(-10px) translateX(10px);
+}
+
+#middle-right {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+        top: 33%;
+        left: 74%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#middle-right:hover ~ .emoji #lefteye {
+    transform: translateX(10px);
+}
+
+#middle-right:hover ~ .emoji #righteye {
+    transform: translateX(10px);
+}
+
+#middle-right:hover ~ .emoji #mouth {
+    transform: translateX(10px);
+}
+
+#bottom-right {
+    width: 35%;
+    height: 35%;
+    position: absolute;
+        top: 66%;
+        left: 66%;
+    background-color: transparent;
+    z-index: 999;
+
+}
+
+#bottom-right:hover ~ .emoji #lefteye {
+    transform: translateX(10px) translateY(10px);
+}
+
+#bottom-right:hover ~ .emoji #righteye {
+    transform: translateX(10px) translateY(10px);
+}
+
+#bottom-right:hover ~ .emoji #mouth {
+    transform: translateX(10px) translateY(5px);
+}
+
+
+#dave  {
+    color: var(--secondary-color);
+    font-family: 'Callie Chalk Font', sans-serif;;
+    position: absolute;
+    font-size: 80%;
+    top: 520px;
+    left: 55%;
+}
+
+

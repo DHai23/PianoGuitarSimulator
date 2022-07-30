@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="piano">
+        <button class="white-key C4-key"></button>
+        <button class="black-key Db4-key"></button>
+        <button class="white-key D4-key"></button>
+        <button class="black-key Eb4-key"></button>
+        <button class="white-key E4-key"></button>
+        <button class="white-key F4-key"></button>
+        <button class="black-key Gb4-key"></button>
+        <button class="white-key G4-key"></button>
+        <button class="black-key Ab4-key"></button>
+        <button class="white-key A4-key"></button>
+        <button class="black-key Bb4-key"></button>
+        <button class="white-key B4-key"></button>
+        <button class="white-key C5-key"></button>
+        <button class="black-key Db5-key"></button>
+        <button class="white-key D5-key"></button>
+        <button class="black-key Eb5-key"></button>
+        <button class="white-key E5-key"></button>
+        <h1 class="keynote-white C4-keynote">C4</h1>
+        <h1 class="keynote-white D4-keynote">D4</h1>
+        <h1 class="keynote-white E4-keynote">E4</h1>
+        <h1 class="keynote-white F4-keynote">F4</h1>
+        <h1 class="keynote-white G4-keynote">G4</h1>
+        <h1 class="keynote-white A4-keynote">A4</h1>
+        <h1 class="keynote-white B4-keynote">B4</h1>
+        <h1 class="keynote-white C5-keynote">C5</h1>
+        <h1 class="keynote-white D5-keynote">D5</h1>
+        <h1 class="keynote-white E5-keynote">E5</h1>
+        <h1 class="keynote-black Db4-keynote">Db4</h1>
+        <h1 class="keynote-black Eb4-keynote">Eb4</h1>
+        <h1 class="keynote-black Gb4-keynote">Gb4</h1>
+        <h1 class="keynote-black Ab4-keynote">Ab4</h1>
+        <h1 class="keynote-black Bb4-keynote">Bb4</h1>
+        <h1 class="keynote-black Db5-keynote">Db5</h1>
+        <h1 class="keynote-black Eb5-keynote">Eb5</h1>
+    </div>
+    <div id="introduction">
+        <h1>Bấm nút Q, W, E, R, T, Y, U, I, O, P để chơi phím trắng</h1>
+        <h1>Bấm nút 2, 3, 5, 6, 7, 9, 0 để chơi các phím đen</h1>
+    </div>
+
+    <img src="images/moon.png" id="icon" title="Moon">
+    <div id="message">Night mode: OFF</div>
+
+    <div id="mySidenav" class="sidenav scroll">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p style="cursor:pointer;" onclick="song1()">Happy Birthday</p>
+        <p style="cursor:pointer;" onclick="song2()">Ode to Joy</p>
+        <p style="cursor:pointer;" onclick="song3()">Twinkle twinkle little star</p>
+        <p style="cursor:pointer;" onclick="song4()">Fur elise</p>
+        <p style="cursor:pointer;" onclick="song5()">Faded</p>
+        <p style="cursor:pointer;" onclick="song6()">Jingle Bells</p>
+        <p style="cursor:pointer;" onclick="song7()">Wish you a merry Xmas</p>
+        <p style="cursor:pointer;" onclick="song8()">Date 2</p>
+        <p style="cursor:pointer;" onclick="song9()">Demons</p>
+        <p style="cursor:pointer;" onclick="song1()">Mary had a little lamp</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+        <p style="cursor:pointer;" onclick="song1()">Song 1</p>
+
+    </div>
+    <pre id="sheet"></pre> 
+
+    <div class="menu">
+        <div class="toggle" title="Musical Instruments"><ion-icon name="pause-circle-outline"></ion-icon>
+        </div>
+        <li style="--i:0;" title="Guitar Mode">
+            <a href="../Guitar/index-guitar.html"><ion-icon name="musical-note-outline" title="Guitar Mode"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:1;" title="Piano Mode">
+            <a href="index.html"><ion-icon name="musical-notes-outline" title="Piano Mode"></ion-icon></a>
+        </li>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <span style="font-size:30px;cursor:pointer; position: absolute; top:30px; left: 20px; color: var(--secondary-color);" onclick="openNav()">&#9776; Chọn bài</span>
+
+    <div id="top-left1"></div>
+    <div id="top-left2"></div>
+    <div id="middle-left"></div>
+    <div id="bottom-left"></div>
+
+    <div id="middle-top"></div>
+    <div id="middle-middle"></div>
+    <div id="middle-bottom"></div>
+
+    <div id="top-right"></div>
+    <div id="middle-right"></div>
+    <div id="bottom-right"></div>
+
+    <div class="emoji">
+        <div id="lefteye"></div>
+        <div id="righteye"></div>
+        <div id="mouth"></div>
+    </div>
+    
+    <pre id="dave">
+    This  is  Dave
+     He  is  usually  quiet  but  really  fond  of  singing
+
+    </pre>
+    <script src="script.js"></script>
+</body>
+</html>
